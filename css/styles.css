@@ -91,7 +91,7 @@ ul {
   font-style: normal;
   font-weight: 700;
   font-size: 26px;
-  line-height: 1.35;
+  line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--accent-color);
 }
@@ -138,10 +138,8 @@ ul {
   border-radius: 2px;
   background-color: var(--accent-color);
   opacity: 0;
-  /* transition-property: opacity;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); */
 }
+
 .current::after {
   opacity: 1;
 }
