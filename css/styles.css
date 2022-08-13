@@ -143,6 +143,12 @@ ul {
   /* margin-right: 10px; */
   fill: currentColor;
 }
+
+.event-link {
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
 .event-link:hover,
 .event-link:focus {
   color: var(--accent-color);
@@ -189,10 +195,17 @@ ul {
   letter-spacing: 0.06em;
   color: var(--hero-text-color);
   background: var(--accent-color);
-
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-color: transparent;
   border-radius: 4px;
+
+  transition-property: box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hero-btn:hover,
+.hero-btn:focus {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 /* SKILLS SECTION */
@@ -248,6 +261,25 @@ ul {
   column-gap: 30px;
 }
 
+.about-item {
+  position: relative;
+}
+
+.about-lable {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  padding: 27px 15px;
+  color: var(--white-text-color);
+  background-color: rgba(47, 48, 58, 0.8);
+}
 /* TEAM SECTION */
 .team {
   background: var(--tean-section-background);
@@ -308,24 +340,28 @@ ul {
   height: 44px;
 }
 .icon-soc-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 100%;
   height: 100%;
   border-radius: 50%;
   /* background-color: #02658b; */
-  display: flex;
-  align-items: center;
-  justify-content: center;
   color: #afb1b8;
+
+  transition-property: background-color, color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.icon {
-  /* margin-right: 10px; */
-  fill: currentColor;
-}
 .icon-soc-link:hover,
 .icon-soc-link:focus {
   background-color: var(--accent-color);
   color: var(--white-text-color);
+}
+.icon {
+  /* margin-right: 10px; */
+  fill: currentColor;
 }
 
 /* CLIENTS SECTION */
@@ -348,14 +384,18 @@ ul {
   height: 92px;
 }
 .client-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 100%;
   height: 100%;
   border: 1px solid #afb1b8;
   border-radius: 4px;
-  display: flex;
   color: #afb1b8;
-  align-items: center;
-  justify-content: center;
+
+  transition-property: border-color, color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .client-link:hover,
